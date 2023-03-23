@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "server-demo"
+version = "0.1.0"
+description = "Demo for recreating dialogue between OPCUA server and its multiple clients."
+authors = ["Dikshant Jain <you@example.com>"]
+readme = "README.md"
+packages = [{include = "server_demo"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+opcua = "^0.98.13"
+cryptography = "^39.0.2"
+asyncua = "^1.0.1"
+asyncio = "^3.4.3"
+python-dotenv = "^1.0.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
